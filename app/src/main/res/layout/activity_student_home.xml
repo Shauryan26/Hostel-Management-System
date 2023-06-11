@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:backgroundTint="@color/navyblue"
+        app:title=" STUDENT HOME PAGE"
+        android:textAlignment="center"
+        android:textSize="100sp"
+        android:id="@+id/toolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+    <Button
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/submit"
+        android:text="SUBMIT A ROOM REQUEST"
+        android:textSize="18sp"
+        android:backgroundTint="@color/navyblue"
+        app:cornerRadius = "20dp"/>
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/view"
+        android:text="VIEW REQUEST STATUS"
+        android:textSize="18sp"
+        android:backgroundTint="@color/navyblue"
+        app:cornerRadius = "20dp"/>
+
+</LinearLayout>

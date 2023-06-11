@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ADMIN"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="STUDENT"
+            android:textStyle="bold"
+            android:textSize="45dp"
+            android:textColor="@color/navyblue"
+            android:textAlignment="center"
+            android:padding="15dp"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            app:boxStrokeWidth="3dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxStrokeErrorColor="@color/navyblue"
+            app:boxStrokeColor="@color/navyblue"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/name"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/customizeedittext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Registration Number"
+            app:boxStrokeWidth="3dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxStrokeErrorColor="@color/navyblue"
+            app:boxStrokeColor="@color/navyblue"
+            android:layout_marginTop="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/Reg"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/customizeedittext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your official Email Id"
+            app:boxStrokeWidth="3dp"
+            app:boxCornerRadiusTopStart="20dp"
+            app:boxCornerRadiusTopEnd="20dp"
+            app:boxCornerRadiusBottomEnd="20dp"
+            app:boxCornerRadiusBottomStart="20dp"
+            app:boxStrokeErrorColor="@color/navyblue"
+            app:boxStrokeColor="@color/navyblue"
+            android:layout_marginTop="40dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:id="@+id/emailr"
+                android:drawablePadding="8dp"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/customizeedittext"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroup1"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/customizeedittext">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Enter Your Room Choice"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"/>
+            <RadioButton
+                android:id="@+id/radio2n"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Seater Non-AC"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radio3n"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Seater Non-AC"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radio4n"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="4 Seater Non-AC"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+
+            <RadioButton
+                android:id="@+id/radio2a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Seater AC"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/radio3a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="3 Seater AC"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+            <RadioButton
+                android:id="@+id/radio4a"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="4 Seater AC"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+
+                android:textSize="20dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/loginButton"
+            android:text="SUBMIT REQUEST"
+            android:textSize="18sp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/navyblue"
+            app:cornerRadius = "20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
